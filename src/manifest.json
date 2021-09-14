@@ -1,0 +1,24 @@
+{
+    "name": "LR2IR-Helper",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "LR2IR Chrome Extension",
+    "content_scripts": [{
+        "matches": ["http://www.dream-pro.info/~lavalse/LR2IR/*"],
+        "js": [
+            "content.js"
+        ]
+    }],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+    "permissions": [
+        "http://www.dream-pro.info/*",
+        "http://www.ribbit.xyz/*"
+    ],
+    "host_permissions": [
+        "http://www.dream-pro.info/*",
+        "http://www.ribbit.xyz/*"
+    ]
+}
